@@ -16,7 +16,11 @@ export const Focus = ({ addSubject }) => {
           label="What would you like to focus on?"
         />
         <View style={styles.button}>
-          <RoundedButton title="+" size={50} onPress={() => addSubject(subject)} />
+          <RoundedButton
+            title="+"
+            size={50}
+            onPress={() => addSubject(subject)}
+          />
         </View>
       </View>
     </View>
@@ -24,8 +28,7 @@ export const Focus = ({ addSubject }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-  },
+  container: {},
   button: {
     justifyContent: 'center',
   },
@@ -35,7 +38,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     padding: spacing.lg,
-    justifyContent: 'top',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
   },
 });
